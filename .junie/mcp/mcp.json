@@ -3,7 +3,7 @@
         "laravel-boost": {
             "command": "/Users/tobiasbleckert/Library/Application Support/Herd/bin/php85",
             "args": [
-                "/Users/tobiasbleckert/www/libero-2/artisan",
+                "/Users/tobiasbleckert/www/libero/artisan",
                 "boost:mcp"
             ]
         }
