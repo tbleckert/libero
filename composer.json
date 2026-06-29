@@ -8,10 +8,15 @@
     "require": {
         "php": "^8.3",
         "filament/filament": "^5.6",
+        "http-interop/http-factory-guzzle": "^1.2",
+        "laravel/ai": "^0.8.1",
         "laravel/framework": "^13.8",
         "laravel/horizon": "^5.47",
+        "laravel/reverb": "^1.10",
         "laravel/sanctum": "^4.3",
-        "laravel/tinker": "^3.0"
+        "laravel/scout": "^11.3",
+        "laravel/tinker": "^3.0",
+        "meilisearch/meilisearch-php": "^1.16"
     },
     "require-dev": {
         "fakerphp/faker": "^1.23",
@@ -47,7 +52,7 @@
         ],
         "dev": [
             "Composer\\Config::disableProcessTimeout",
-            "npx concurrently -c \"#93c5fd,#c4b5fd\" \"php artisan serve\" \"php artisan horizon\" --names=server,horizon --kill-others"
+            "npx concurrently -c \"#93c5fd,#c4b5fd,#fdba74\" \"php artisan serve\" \"php artisan horizon\" \"php artisan reverb:start\" --names=server,horizon,reverb --kill-others"
         ],
         "test": [
             "@php artisan config:clear --ansi @no_additional_args",

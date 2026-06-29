@@ -12,8 +12,10 @@
     "nightwatch": false,
     "sail": false,
     "skills": [
+        "ai-sdk-development",
         "laravel-best-practices",
         "configuring-horizon",
+        "scout-development",
         "pest-testing",
         "tailwindcss-development"
     ]
